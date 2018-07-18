@@ -1,0 +1,721 @@
+<HTML>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<link href='1style.css' rel='stylesheet' />
+		<link href='1home.css' rel='stylesheet' />
+		<link href='roboto/web-fonts/stylesheet.css' rel='stylesheet'/>
+	</head>
+	<body>
+		<nav id='nav' class='shadow-2'>
+		  <div class='nav1 wrapper'>
+		    <a class='nav-toggle' onclick='shownav()'>
+		    	<svg viewBox="0 0 24 24">
+		    	    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+		    	</svg>
+		    </a>
+		    <header id='header-wrapper'>
+		      <div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+		        <div id='header-inner'>
+		          <a href='http://jonarendra.blogspot.co.id/' style='display: block'>
+		            <img alt='Blog Jonarendra' height='30px; ' id='Header1_headerimg' src='http://3.bp.blogspot.com/-Sux6UcyOwLA/WNebsPR1JjI/AAAAAAAAGZo/eQwlj8idlBkVrNRIT96I5747M6Nm41-IACK4B/s1600/logo-jhonarendra.png' style='display: block' width='216px; '/>
+		          </a>
+		        </div>
+		      </div>
+		    </header>
+		    <a class='search-toggle' onclick='showsearch()'>
+				<svg viewBox="0 0 24 24">
+				    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+				</svg>
+		    </a>
+		  </div>
+		  <div class='nav2'>
+		  	<div class='wrapper'>
+		  		<ul class='floating'>
+		  			<li><a href=''>Tutorial blogger
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M14,13H9.95A1,1 0 0,0 8.95,14A1,1 0 0,0 9.95,15H14A1,1 0 0,0 15,14A1,1 0 0,0 14,13M9.95,10H12.55A1,1 0 0,0 13.55,9A1,1 0 0,0 12.55,8H9.95A1,1 0 0,0 8.95,9A1,1 0 0,0 9.95,10M16,9V10A1,1 0 0,0 17,11A1,1 0 0,1 18,12V15A3,3 0 0,1 15,18H9A3,3 0 0,1 6,15V8A3,3 0 0,1 9,5H13A3,3 0 0,1 16,8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Template
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M22,17H18V10H22M23,8H17A1,1 0 0,0 16,9V19A1,1 0 0,0 17,20H23A1,1 0 0,0 24,19V9A1,1 0 0,0 23,8M4,6H22V4H4A2,2 0 0,0 2,6V17H0V20H14V17H4V6Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>SEO
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Komputer
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M21,14H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10L8,21V22H16V21L14,18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Desain
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Pemrograman
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M12.89,3L14.85,3.4L11.11,21L9.15,20.6L12.89,3M19.59,12L16,8.41V5.58L22.42,12L16,18.41V15.58L19.59,12M1.58,12L8,5.58V8.41L4.41,12L8,15.58V18.41L1.58,12Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Game
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M16.5,9L13.5,12L16.5,15H22V9M9,16.5V22H15V16.5L12,13.5M7.5,9H2V15H7.5L10.5,12M15,7.5V2H9V7.5L12,10.5L15,7.5Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Informasi
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Video
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z" />
+		  				</svg>
+		  			</a></li>
+		  			<li><a href=''>Lain-lain
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M20.71,4.04C21.1,3.65 21.1,3 20.71,2.63L18.37,0.29C18,-0.1 17.35,-0.1 16.96,0.29L15,2.25L18.75,6M17.75,7L14,3.25L4,13.25V17H7.75L17.75,7Z" />
+		  				</svg>
+		  			</a></li>
+		  		</ul>
+		  	</div>
+		  </div>
+		</nav>
+
+		<div id='search-box'>
+		  <div class='wrapper'>
+		    <form action='/search' id='cse-search-box'>
+		      <a class='search-back' onclick='showsearch()'>
+		      	<svg viewBox="0 0 24 24">
+		      	    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+		      	</svg>
+		      </a>
+		      <input id='search-text' name='q' placeholder='Search here...' required='required' spellcheck='false' type='text' value=''/>
+		      <button type='submit'>
+		     	<svg viewBox="0 0 24 24">
+		     	    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+		     	</svg>
+		      </button>
+		    </form>
+		  </div>
+		</div>
+
+		<div class='spacer'></div>
+		
+		<aside id='sidenav' class='shadow-2'>
+		  <div class='nav-header'>
+		    <a class='nav-toggle' onclick='shownav()'>
+		    	<svg viewBox="0 0 24 24">
+		    	    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+		    	</svg>
+		    </a>
+		    <div class='nav-image'>
+		      <img src='https://3.bp.blogspot.com/-UdTPzIabQmY/WNNEaz8Xu_I/AAAAAAAAGYA/_YfIFqC1UhUCdG4Ys5FPryeh3Ng14ypWwCLcB/s72-c/thumbnail-menginstal-java-di-laptop-windows-10-jonarendra.png'>
+		    </div>
+		    <a class='nav-brand'>Jhonarendra</a>
+		  </div>
+		  <ul class='nav main-nav'>
+		  	<li><a href='/p/tentang-saya.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+		  		</svg>
+		  	Tentang saya</a></li>
+		  	<li><a href='/p/kontak.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+		  		</svg>
+		  	Kontak</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M7,5H21V7H7V5M7,13V11H21V13H7M4,4.5A1.5,1.5 0 0,1 5.5,6A1.5,1.5 0 0,1 4,7.5A1.5,1.5 0 0,1 2.5,6A1.5,1.5 0 0,1 4,4.5M4,10.5A1.5,1.5 0 0,1 5.5,12A1.5,1.5 0 0,1 4,13.5A1.5,1.5 0 0,1 2.5,12A1.5,1.5 0 0,1 4,10.5M7,19V17H21V19H7M4,16.5A1.5,1.5 0 0,1 5.5,18A1.5,1.5 0 0,1 4,19.5A1.5,1.5 0 0,1 2.5,18A1.5,1.5 0 0,1 4,16.5Z" />
+		  		</svg>
+		  	Daftar isi</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M12,3A9,9 0 0,0 3,12H0L4,16L8,12H5A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19C10.5,19 9.09,18.5 7.94,17.7L6.5,19.14C8.04,20.3 9.94,21 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M14,12A2,2 0 0,0 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12Z" />
+		  		</svg>
+		  	Sejarah</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M17.45,15.18L22,7.31V19L22,21H2V3H4V15.54L9.5,6L16,9.78L20.24,2.45L21.97,3.45L16.74,12.5L10.23,8.75L4.31,19H6.57L10.96,11.44L17.45,15.18Z" />
+		  		</svg>
+		  	Iklan</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" />
+		  		</svg>
+		  	Tanya Jawab</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M16,14V13C16,11.67 13.33,11 12,11C10.67,11 8,11.67 8,13V14H16M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z" />
+		  		</svg>
+		  	Top Comments</a></li>
+		  	<li class='dropdown' onclick='bukamenu()'><a href='javascript:void(0)'>
+		  		<svg viewBox="0 0 24 24">
+		  		    <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+		  		</svg>
+		  	Alat ngeblog<b class='caret'></b></a>
+		  		<ul class='dropdown-menu'>
+		  			<li><a href='/p/html-editor_31.html' target='_blank'>
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z" />
+		  				</svg>
+		  			HTML Editor</a></li>
+		  			<li><a href='/p/color-picker_31.html' target='_blank'>
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M19,11.5C19,11.5 17,13.67 17,15A2,2 0 0,0 19,17A2,2 0 0,0 21,15C21,13.67 19,11.5 19,11.5M5.21,10L10,5.21L14.79,10M16.56,8.94L7.62,0L6.21,1.41L8.59,3.79L3.44,8.94C2.85,9.5 2.85,10.47 3.44,11.06L8.94,16.56C9.23,16.85 9.62,17 10,17C10.38,17 10.77,16.85 11.06,16.56L16.56,11.06C17.15,10.47 17.15,9.5 16.56,8.94Z" />
+		  				</svg>
+		  			Color Picker</a></li>
+		  			<li><a href='/p/beautify-and-compressor.html' target='_blank'>
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M5,3L4.35,6.34H17.94L17.5,8.5H3.92L3.26,11.83H16.85L16.09,15.64L10.61,17.45L5.86,15.64L6.19,14H2.85L2.06,18L9.91,21L18.96,18L20.16,11.97L20.4,10.76L21.94,3H5Z" />
+		  				</svg>
+		  			CSS Formatter</a></li>
+		  			<li><a href='/p/alat-ngeblog-jhonarendra.html' target='_blank'>
+		  				<svg viewBox="0 0 24 24">
+		  				    <path d="M11,6.5V9.33L8.33,12L11,14.67V17.5L5.5,12M13,6.43L18.57,12L13,17.57V14.74L15.74,12L13,9.26M5,3C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5Z" />
+		  				</svg>
+		  			Semua alat...</a></li>
+		  		</ul>
+		  	</li>
+		  	<li><a>Mode malam <input type='checkbox' id='modemalam' onclick='togglemode()'></a></li>
+		  </ul>
+		</aside>
+
+		<div id='about'>
+			<div class='wrapper'>
+				<div class='foto-jhon'>
+					<img src='image/jon.png' />
+				</div>
+				<div class='about-jhon'>
+					<h1>Putu Jhonarendra</h1>
+					<p>The spectacle before us indeed sublime</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id='featured'>
+			<div class='wrapper'>
+			  <div class='feature section' id='feature'>
+			    <div class='widget BlogList' data-version='1' id='BlogList1'>
+			      <span class='fade'>
+			        <ul>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/1.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/2.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/3.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/4.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/1.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			        </ul>
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div id='content-wrapper'>
+			<div class='wrapper'>
+
+				<div id='post'>
+					<div class='wrapper'>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<svg viewBox="0 0 24 24">
+									    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+									</svg>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<svg viewBox="0 0 24 24">
+									    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+									</svg>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<svg viewBox="0 0 24 24">
+									    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+									</svg>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<svg viewBox="0 0 24 24">
+									    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+									</svg>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<svg viewBox="0 0 24 24">
+									    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+									</svg>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<svg viewBox="0 0 24 24">
+									    <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,4M12.5,8H11V14L15.75,16.85L16.5,15.62L12.5,13.25V8M7.88,3.39L6.6,1.86L2,5.71L3.29,7.24L7.88,3.39M22,5.72L17.4,1.86L16.11,3.39L20.71,7.25L22,5.72Z" />
+									</svg>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside id='sidebar'>
+					<div class='wrapper'>
+						<div class='populer shadow-1'>
+							<h3 class='sidebar-title st-light'>Artikel Populer</h3>
+							<div class="news-sidebar">
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/1.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">World | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> 5 things you need to know wenesday</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/2.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Tech | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Auti-austeriry Protest Turns Violent In Germany</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                      <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/3.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Money | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Flying Cars: The near Future, From SXSW</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                      <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/4.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Life | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> No end in Signt for California Drought</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/5.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">World | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Boehner Coup by Conservatives is Unlikely</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/6.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Travel | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Market Reaction to fed rate talk: 3 scenarious</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                </div>
+						</div>
+						<div class='subscribe shadow-1'>
+							<h3 class='sidebar-title st-pink'>Subscribe</h3>
+							<div class='subscontent'>
+							<p>Berlangganan artikel Jhonarendra via email</p>
+							<form action="">
+							          <input class="shadow-1 subscribe-input" name="email" onblur="if (this.value == &quot;&quot;) {this.value = &quot;Email address&quot;;}" onfocus="if (this.value == &quot;Email address&quot;) {this.value = &quot;&quot;;}" type="text" value="Email">
+							          <input name="uri" type="hidden" value="BlogJonarendra">
+							          <input name="loc" type="hidden" value="en_US">
+							          <button class="shadow-1 btn" type="submit" value="Submit">subscribe</button>
+							        </form>
+							</div>
+						</div>
+						<div class='commentwidget shadow-1'>
+							<h3 class='sidebar-title st-blue'>Komentar</h3>
+							<div class='cmcontent'>
+							<ul class="w2b_recent_comments">
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>askoa aoskaosk oaskoask aosk  aoskaoskao oaskoaskaoskaos aosk aosk oakoaksoas aoskaos akoskaos oaskaoskoasoaksaos oaks ako k ksoa aoskao aoskoaks os</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class='footerwidget'>
+				<div class='wrapper'>
+					<div class='footer-logo'>
+						<img src='image/1.jpg'/>
+					</div>
+					<div class='footer-menu1'>
+						<h3 class='sidebar-title st-light2'>Laman</h3>
+						<ul>
+                            <li>
+                                <a href="javascript:void(0);">Tentang saya</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Kontak</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Daftar isi</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Iklan</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Kebijakan privasi</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Persyaratan layanan</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Disclaimer</a>
+                            </li>
+                        </ul>
+					</div>
+					<div class='footer-menu2'>
+						<h3 class='sidebar-title st-light2'>Kategori</h3>
+						<ul>
+                            <li>
+                                <a href="javascript:void(0);">Tutorial Blogger</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Template</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">SEO</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Komputer</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Desain</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pemrograman</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Game</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Informasi</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Video</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Lain-lain</a>
+                            </li>
+                        </ul>
+					</div>
+					<div class='footer-sosmed'>
+						<img src='image/1.jpg' />
+						<img src='image/1.jpg' />
+					</div>
+				</div>
+			</div>
+			<div class="credit">
+				<div class='wrapper'>
+					Copyright © <span id='current-year'></span> <a href=''>Jhonarendra</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class='nav-overlay' onclick='closeoverlay()'></div>
+		<script type='text/javascript'>
+		  var sidebarWrapper = document.getElementById('sidenav');
+		  var overlay = document.querySelector('.nav-overlay');
+		  var dropdown = document.querySelector('.dropdown');
+		  var dropdownmenu = document.querySelector('.dropdown-menu');
+		  var searchBox = document.getElementById('search-box');
+		  function shownav() {
+		    sidebarWrapper.classList.toggle('open');
+		    overlay.classList.toggle('active');
+		  }
+		  function closeoverlay() {
+		    sidebarWrapper.classList.remove('open');
+		    overlay.classList.remove('active');
+		    searchBox.classList.remove('active');
+		  }
+		  function bukamenu(){
+		    dropdownmenu.classList.toggle('active');
+		    dropdown.classList.toggle('active');
+		  }
+		  function showsearch() {
+		    searchBox.classList.toggle('active');
+		    overlay.classList.toggle('active');
+		  }
+		  function getCurrentYear(){
+		    var e=new Date;
+		    return e.getFullYear()
+		  }
+		  el=document.getElementById('current-year'),
+		  el.innerHTML=getCurrentYear();
+
+
+		  var modemalam = document.getElementById('modemalam');
+		  function togglemode(){
+		  	document.body.classList.toggle('modemalam');
+		  }
+		</script>
+	</body>
+</HTML>

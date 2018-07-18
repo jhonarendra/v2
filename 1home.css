@@ -1,0 +1,350 @@
+/* ABOUT */
+
+#about{
+  position: relative;
+  height:600px;
+  padding:60px 0;
+  width:100%;
+  background-image: url(image/bghead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,0.5);
+}
+.about-jhon, .foto-jhon{
+  float:left;
+  width:50%;
+}
+.about-jhon{
+  padding:120px 0 0 0;
+  color:#fff;
+}
+.about-jhon h1{
+  font-size:96px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.about-jhon p{
+  font-size:32px;
+  margin: 1.2em 0;
+}
+.foto-jhon{
+  text-align: center;
+}
+.foto-jhon img{
+  height:300px;
+  margin-top:120px;
+}
+
+/* FEATURED */
+
+#featured{
+  padding:20px 0;
+  height:700px;/*NANTI HAPUS*/
+}
+
+#BlogList1 ul{
+  padding:0;
+  margin:0;
+}
+#BlogList1 ul li{
+  float:left;
+  width:23%;
+  margin:1%;
+  height:230px;
+}
+#BlogList1 .item-content{
+  position:relative;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+#BlogList1 .item-thumbnail img{
+  background:#666;
+  width:100%;
+  height:230px;
+}
+
+#BlogList1 .bg-item{
+  position:absolute;
+  width:100%;
+  padding:20px;
+  bottom:0;
+  background: rgba(0, 0, 0, 0) linear-gradient(transparent, rgba(0, 0, 0, 0.85)) repeat scroll 0 0;
+  -webkit-background: rgba(0, 0, 0, 0) linear-gradient(transparent, rgba(0, 0, 0, 0.85)) repeat scroll 0 0;
+  -ms-background: rgba(0, 0, 0, 0) linear-gradient(transparent, rgba(0, 0, 0, 0.85)) repeat scroll 0 0;
+  -o-background: rgba(0, 0, 0, 0) linear-gradient(transparent, rgba(0, 0, 0, 0.85)) repeat scroll 0 0;
+}
+#BlogList1 .item-info{
+  width:100%;
+}
+
+#BlogList1 .item-label{
+  position: absolute;
+  width: 100%;
+  padding: 0 0 0 25px;
+  top: 20px;
+}
+#BlogList1 .item-label a{
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+#BlogList1 .item-title a{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3em;
+}
+#BlogList1 .item-desk p{
+  color:#fff;
+  margin:1em 0 0 0;
+}
+
+#BlogList1 ul li:first-child{
+  width:48%;
+  height:483px;
+}
+#BlogList1 ul li:first-child .item-thumbnail img{
+  height:483px;
+}
+#BlogList1 ul li:first-child .item-info{
+  width:75%;
+}
+#BlogList1 ul li:first-child .item-label a{
+  background:#3F51B5;
+}
+#BlogList1 ul li:nth-child(2) .item-label a{
+  background:#E91E63;
+}
+#BlogList1 ul li:nth-child(3) .item-label a{
+  background:#F44336;
+}
+#BlogList1 ul li:nth-child(4) .item-label a{
+  background:#2196F3;
+}
+#BlogList1 ul li:nth-child(5) .item-label a{
+  background:#4CAF50;
+}
+#BlogList1 ul li:first-child .item-title a{
+  color: #fff;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom:15px;
+}
+
+/* POST */
+
+#post{
+  height:1000px;
+}
+.post{
+  width:31.33%;
+  margin:1%;
+  height:450px;
+  overflow:hidden;
+  float:left;
+}
+.post-thumb{
+  height:250px;
+  overflow: hidden;
+}
+.post-thumb img{
+  height:250px;
+  width:100%;
+}
+.post-info{
+  padding: 8px 20px;
+}
+.post-time{
+      color: #fe7faa;
+    margin: 15px 0;
+    display: block;
+    font-size: 12px;
+}
+.post-time svg{
+  height:15px;
+  width:15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.post-time svg path{
+  fill:#fe7faa;
+}
+.post-title a{
+  color: #444;
+    display: block;
+    line-height: normal;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.post-title a:hover {
+    color: #2196F3;
+}
+.post-desk p{
+      color: #8b8b8b;
+    font-size: 14px;
+}
+
+
+/* SIDEBAR */
+.populer,
+.subscribe,
+.commentwidget{
+  width:48%;
+  margin:1%;
+  float:left;
+}
+.subscribe{
+  height:300px;
+}
+.commentwidget ul{
+  width:500%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px){
+  #about{
+    text-align: center;
+    height:800px;
+  }
+  .foto-jhon,
+  .about-jhon{
+    width:100%;
+    float:none;
+  }
+  .foto-jhon img{
+    height:200px;
+  }
+  .about-jhon{
+    padding:50px 0;
+  }
+  #featured{
+    height:1000px;
+  }
+  #BlogList1 ul li:first-child,
+  #BlogList1 ul li:first-child .item-thumbnail img,
+  #BlogList1 .item-thumbnail img{
+    height:420px;
+  }
+  #BlogList1 ul li{
+    width:48%;
+    height:420px;
+  }
+  #BlogList1 ul li:first-child .item-info{
+    width:100%;
+  }
+  #BlogList1 ul li .item-title a{
+    color: #fff;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom:15px;
+  }
+  #BlogList1 ul li:last-child{
+    display:none;
+  }
+  #post{
+    height:2400px;
+  }
+  .post{
+    width:48%;
+    margin:1%;
+    height:500px;
+  }
+  .post-thumb,
+  .post-thumb img{
+    height:300px;
+  }
+}
+@media screen and (max-width:800px){
+  .about-jhon h1{
+    font-size: 45px;
+  }
+  .about-jhon p{
+    font-size: 24px;
+  }
+  #BlogList1 ul li:first-child,
+  #BlogList1 ul li,
+  #BlogList1 ul li:first-child .item-thumbnail img,
+  #BlogList1 .item-thumbnail img{
+    height:300px;
+  }
+  .post{
+    height:400px;
+  }
+  .post-thumb,
+  .post-thumb img{
+    height:200px;
+  }
+}
+@media screen and (max-width:640px){
+  #featured{
+    height:2400px;
+  }
+  #content-wrapper{
+    height:4000px;
+  }
+  #BlogList1 ul li:first-child,
+  #BlogList1 ul li{
+    width:100%;
+    margin:1% 0;
+    height:400px;
+  }
+  #BlogList1 ul li:first-child .item-thumbnail img,
+  #BlogList1 .item-thumbnail img{
+    height:400px;
+  }
+  .post{
+    width:46%;
+    margin:2%;
+    height:350px;
+  }
+  .post-thumb,
+  .post-thumb img{
+    height:150px;
+  }
+  .populer, .subscribe, .commentwidget{
+    width:100%;
+    margin:2% 0;
+  }
+}
+@media screen and (max-width:480px){
+  #BlogList1 ul li:first-child,
+  #BlogList1 ul li{
+    margin:2% 0;
+    height:280px;
+  }
+  #BlogList1 ul li:first-child .item-thumbnail img,
+  #BlogList1 .item-thumbnail img{
+    height:280px;
+  }
+  #BlogList1 ul li:first-child .item-title a,
+  #BlogList1 ul li .item-title a{
+    font-size: 24px;
+  }
+  #post{
+    height:3500px;
+  }
+  .post{
+    width:100%;
+    margin:2% 0;
+    height:400px;
+  }
+  .post-thumb,
+  .post-thumb img{
+    height:200px;
+  }
+}
+@media screen and (max-width:360px){
+  #BlogList1 ul li,
+  #BlogList1 ul li:first-child,
+  #BlogList1 .item-thumbnail img,
+  #BlogList1 ul li:first-child .item-thumbnail img{
+    height:200px;
+  }
+  #BlogList1 ul li:first-child .item-title a,
+  #BlogList1 ul li .item-title a{
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+}

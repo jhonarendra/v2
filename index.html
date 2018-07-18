@@ -1,0 +1,606 @@
+<HTML>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<link href='style.css' rel='stylesheet' />
+		<link href='home.css' rel='stylesheet' />
+		<link href='iconfont/material-icons.css' rel='stylesheet'/>
+		<link href='roboto/web-fonts/stylesheet.css' rel='stylesheet'/>
+	</head>
+	<body>
+		<nav id='nav' class='shadow-2'>
+		  <div class='nav1 wrapper'>
+		    <a class='nav-toggle' onclick='shownav()'><i class='material-icons'>menu</i></a>
+		    <header id='header-wrapper'>
+		      <div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+		        <div id='header-inner'>
+		          <a href='http://jonarendra.blogspot.co.id/' style='display: block'>
+		            <img alt='Blog Jonarendra' height='30px; ' id='Header1_headerimg' src='http://3.bp.blogspot.com/-Sux6UcyOwLA/WNebsPR1JjI/AAAAAAAAGZo/eQwlj8idlBkVrNRIT96I5747M6Nm41-IACK4B/s1600/logo-jhonarendra.png' style='display: block' width='216px; '/>
+		          </a>
+		        </div>
+		      </div>
+		    </header>
+		    <a class='search-toggle' onclick='showsearch()'><i class='material-icons'>search</i></a>
+		  </div>
+		  <div class='nav2'>
+		  	<div class='wrapper'>
+		  		<ul class='floating'>
+		  			<li><a href=''>Tutorial blogger<i class='material-icons'>web</i></a></li>
+		  			<li><a href=''>Template<i class='material-icons'>important_devices</i></a></li>
+		  			<li><a href=''>SEO<i class='material-icons'>language</i></a></li>
+		  			<li><a href=''>Komputer<i class='material-icons'>devices</i></a></li>
+		  			<li><a href=''>Desain<i class='material-icons'>visibility</i></a></li>
+		  			<li><a href=''>Pemrograman<i class='material-icons'>code</i></a></li>
+		  			<li><a href=''>Game<i class='material-icons'>games</i></a></li>
+		  			<li><a href=''>Informasi<i class='material-icons'>error_outline</i></a></li>
+		  			<li><a href=''>Video<i class='material-icons'>theaters</i></a></li>
+		  			<li><a href=''>Lain-lain<i class='material-icons'>mode_edit</i></a></li>
+		  		</ul>
+		  	</div>
+		  </div>
+		</nav>
+
+		<div id='search-box'>
+		  <div class='wrapper'>
+		    <form action='/search' id='cse-search-box'>
+		      <a class='search-back' onclick='showsearch()'><i class='material-icons'>arrow_back</i></a>
+		      <input id='search-text' name='q' placeholder='Search here...' required='required' spellcheck='false' type='text' value=''/>
+		      <button type='submit'>
+		        <i class='material-icons'>search</i>
+		      </button>
+		    </form>
+		  </div>
+		</div>
+
+		<div class='spacer'></div>
+		
+		<aside id='sidenav' class='shadow-2'>
+		  <div class='nav-header'>
+		    <a class='nav-toggle' onclick='shownav()'>
+		      <i class='material-icons'>close</i>
+		    </a>
+		    <div class='nav-image'>
+		      <img src='https://3.bp.blogspot.com/-UdTPzIabQmY/WNNEaz8Xu_I/AAAAAAAAGYA/_YfIFqC1UhUCdG4Ys5FPryeh3Ng14ypWwCLcB/s72-c/thumbnail-menginstal-java-di-laptop-windows-10-jonarendra.png'>
+		    </div>
+		    <a class='nav-brand'>Jhonarendra</a>
+		  </div>
+		  <ul class='nav main-nav'>
+		  	<li><a href='/p/tentang-saya.html' target='_blank'><i class='nav-icon material-icons'>person</i>Tentang saya</a></li>
+		  	<li><a href='/p/kontak.html' target='_blank'><i class='nav-icon material-icons'>phone</i>Kontak</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'><i class='nav-icon material-icons'>format_list_bulleted</i>Daftar isi</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'><i class='nav-icon material-icons'>settings_backup_restore</i>Sejarah</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'><i class='nav-icon material-icons'>attach_money</i>Iklan</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'><i class='nav-icon material-icons'>lightbulb_outline</i>Tanya Jawab</a></li>
+		  	<li><a href='/p/daftar-isi.html' target='_blank'><i class='nav-icon material-icons'>insert_comment</i>Top Comments</a></li>
+		  	<li class='dropdown' onclick='bukamenu()'><a href='javascript:void(0)'><i class='nav-icon material-icons'>settings</i>Alat ngeblog<b class='caret'></b></a>
+		  		<ul class='dropdown-menu'>
+		  			<li><a href='/p/html-editor_31.html' target='_blank'><i class='nav-icon material-icons'>settings_ethernet</i>HTML Editor</a></li>
+		  			<li><a href='/p/color-picker_31.html' target='_blank'><i class='nav-icon material-icons'>colorize</i>Color Picker</a></li>
+		  			<li><a href='/p/beautify-and-compressor.html' target='_blank'><i class='nav-icon material-icons'>extension</i>CSS Formatter</a></li>
+		  			<li><a href='/p/alat-ngeblog-jhonarendra.html' target='_blank'><i class='nav-icon material-icons'>style</i>Semua alat...</a></li>
+		  		</ul>
+		  	</li>
+		  	<li><a>Mode malam <input type='checkbox' id='modemalam' onclick='togglemode()'></a></li>
+		  </ul>
+		</aside>
+
+		<div id='about'>
+			<div class='wrapper'>
+				<div class='foto-jhon'>
+					<img src='image/jon.png' />
+				</div>
+				<div class='about-jhon'>
+					<h1>Putu Jhonarendra</h1>
+					<p>The spectacle before us indeed sublime</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id='featured'>
+			<div class='wrapper'>
+			  <div class='feature section' id='feature'>
+			    <div class='widget BlogList' data-version='1' id='BlogList1'>
+			      <span class='fade'>
+			        <ul>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/1.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/2.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/3.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/4.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			          <li class='shadow-1'>
+			            <div class='item-content'>
+			              <div class='item-thumbnail'>
+			                <a href=''>
+			                  <img src='image/1.jpg'/>
+			                </a>
+			              </div>
+			              <div class='item-label'>
+			              	<a href=''>Pemrograman</a>
+			              </div>
+			              <div class='bg-item'>
+			              	<div class='item-info'>
+			              		<div class='item-title'>
+			              		  <a href='http://jonarendra.blogspot.com/2017/03/menginstal-java-di-windows-10.html'>Menginstal Java di Windows 10</a>
+			              		</div>
+			              		<div class='item-desk'>
+			              			<p>Lorem ipsum dolor sit amet gogo pawer ranger yeye yeye yeye lalala lalala</p>
+			              		</div>
+			              	</div>
+			              </div>
+			            </div>
+			          </li>
+			        </ul>
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<div id='content-wrapper'>
+			<div class='wrapper'>
+
+				<div id='post'>
+					<div class='wrapper'>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/1.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<i class='material-icons'>access_alarm</i>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/2.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<i class='material-icons'>access_alarm</i>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/3.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<i class='material-icons'>access_alarm</i>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/4.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<i class='material-icons'>access_alarm</i>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/5.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<i class='material-icons'>access_alarm</i>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+						<div class='post shadow-1'>
+							<div class='post-thumb'>
+								<img src='image/6.jpg'/>
+							</div>
+							<div class='post-info'>
+								<div class='post-time'>
+									<i class='material-icons'>access_alarm</i>12-02-2017
+								</div>
+								<div class='post-title'>
+									<h2><a href=''>Algoritma Selection Sort dan Bubble Sort</a></h2>
+								</div>
+								<div class='post-desk'>
+									<p>skaosoa kaoksoa ksoaksao ksaoks kasokaoskao kao aosskaosa oaskoaksoaska kao kaoskao oaskoaskoask aos kaos akso oaskoa.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside id='sidebar'>
+					<div class='wrapper'>
+						<div class='populer shadow-1'>
+							<h3 class='sidebar-title st-light'>Artikel Populer</h3>
+							<div class="news-sidebar">
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/1.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">World | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> 5 things you need to know wenesday</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/2.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Tech | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Auti-austeriry Protest Turns Violent In Germany</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                      <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/3.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Money | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Flying Cars: The near Future, From SXSW</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                      <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/4.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Life | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> No end in Signt for California Drought</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/5.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">World | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Boehner Coup by Conservatives is Unlikely</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    
+							                                    <div class="news-box">
+							                                        <!-- News Sidebar Image -->
+							                                        <div class="image">
+							                                            <img src="image/6.jpg" alt="news Image">
+							                                        </div>
+							                                        <!-- News Sidebar Detail -->
+							                                        <div class="news-detail">
+							                                            <div class="news-category">
+							                                                <a href="javascript:void(0);">Travel | 21 min ago </a>
+							                                            </div>
+							                                            <div class="news-title">
+							                                                <a href="javascript:void(0);"> Market Reaction to fed rate talk: 3 scenarious</a>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                </div>
+						</div>
+						<div class='subscribe shadow-1'>
+							<h3 class='sidebar-title st-pink'>Subscribe</h3>
+							<div class='subscontent'>
+							<p>Berlangganan artikel Jhonarendra via email</p>
+							<form action="">
+							          <input class="shadow-1 subscribe-input" name="email" onblur="if (this.value == &quot;&quot;) {this.value = &quot;Email address&quot;;}" onfocus="if (this.value == &quot;Email address&quot;) {this.value = &quot;&quot;;}" type="text" value="Email">
+							          <input name="uri" type="hidden" value="BlogJonarendra">
+							          <input name="loc" type="hidden" value="en_US">
+							          <button class="shadow-1 btn" type="submit" value="Submit">subscribe</button>
+							        </form>
+							</div>
+						</div>
+						<div class='commentwidget shadow-1'>
+							<h3 class='sidebar-title st-blue'>Komentar</h3>
+							<div class='cmcontent'>
+							<ul class="w2b_recent_comments">
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>askoa aoskaosk oaskoask aosk  aoskaoskao oaskoaskaoskaos aosk aosk oakoaksoas aoskaos akoskaos oaskaoskoasoaksaos oaks ako k ksoa aoskao aoskoaks os</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+								<li>
+									<div class="avatarImage avatarRound">
+										<img class="avatarRound" src="image/1.jpg" alt="Togel Aceh" width="60" height="60">
+									</div>
+									<a href="http://jonarendra.blogspot.com/2013/02/cara-mengetahui-jumlah-postingan-dan.html?showComment=1498994593251#c6936956689567153241">Togel Aceh</a>
+									<span>mantap gan</span>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class='footerwidget'>
+				<div class='wrapper'>
+					<div class='footer-logo'>
+						<img src='image/1.jpg'/>
+					</div>
+					<div class='footer-menu1'>
+						<h3 class='sidebar-title st-light2'>Laman</h3>
+						<ul>
+                            <li>
+                                <a href="javascript:void(0);">Tentang saya</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Kontak</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Daftar isi</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Iklan</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Kebijakan privasi</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Persyaratan layanan</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Disclaimer</a>
+                            </li>
+                        </ul>
+					</div>
+					<div class='footer-menu2'>
+						<h3 class='sidebar-title st-light2'>Kategori</h3>
+						<ul>
+                            <li>
+                                <a href="javascript:void(0);">Tutorial Blogger</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Template</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">SEO</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Komputer</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Desain</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Pemrograman</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Game</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Informasi</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Video</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Lain-lain</a>
+                            </li>
+                        </ul>
+					</div>
+					<div class='footer-sosmed'>
+						<img src='image/1.jpg' />
+						<img src='image/1.jpg' />
+					</div>
+				</div>
+			</div>
+			<div class="credit">
+				<div class='wrapper'>
+					Copyright © <span id='current-year'></span> <a href=''>Jhonarendra</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class='nav-overlay' onclick='closeoverlay()'></div>
+		<script type='text/javascript'>
+		  var sidebarWrapper = document.getElementById('sidenav');
+		  var overlay = document.querySelector('.nav-overlay');
+		  var dropdown = document.querySelector('.dropdown');
+		  var dropdownmenu = document.querySelector('.dropdown-menu');
+		  var searchBox = document.getElementById('search-box');
+		  function shownav() {
+		    sidebarWrapper.classList.toggle('open');
+		    overlay.classList.toggle('active');
+		  }
+		  function closeoverlay() {
+		    sidebarWrapper.classList.remove('open');
+		    overlay.classList.remove('active');
+		    searchBox.classList.remove('active');
+		  }
+		  function bukamenu(){
+		    dropdownmenu.classList.toggle('active');
+		    dropdown.classList.toggle('active');
+		  }
+		  function showsearch() {
+		    searchBox.classList.toggle('active');
+		    overlay.classList.toggle('active');
+		  }
+		  function getCurrentYear(){
+		    var e=new Date;
+		    return e.getFullYear()
+		  }
+		  el=document.getElementById('current-year'),
+		  el.innerHTML=getCurrentYear();
+
+
+		  var modemalam = document.getElementById('modemalam');
+		  function togglemode(){
+		  	document.body.classList.toggle('modemalam');
+		  }
+		</script>
+	</body>
+</HTML>

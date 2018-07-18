@@ -1,0 +1,146 @@
+
+#post .wrapper, #sidebar .wrapper{
+  width:100%;
+}
+#post, #sidebar{
+  float:left;
+  margin:1%;
+}
+#post{
+  width:64.666%;
+}
+#sidebar{
+  width:31.334%;
+}
+.post-title{
+	padding: 10px 20px;
+}
+.post-body{
+  padding: 20px;
+}
+.breadcrumbs{
+	padding:10px 20px;
+}
+.breadcrumbs svg{
+	height:14px;
+	width:14px;
+	vertical-align: middle;
+}
+.breadcrumbs a{
+	color:#444;
+}
+.halaman{
+	height:100px;
+}
+#blog-pager{
+	width:100%;
+	padding:0;
+}
+.halaman-kiri,
+.halaman-kanan{
+	position:relative;
+	width:50%;
+}
+.halaman-kiri{
+	float:left;
+}
+.halaman-kanan{
+	float: right;
+}
+.halaman-kanan{
+	text-align:right;
+}
+.isihalaman-kiri span, .isihalaman-kiri a{
+	margin-left:40px;
+}
+.isihalaman-kanan span, .isihalaman-kanan a{
+	margin-right:40px;
+}
+.panahkanan,
+.panahkiri{
+	position: absolute;
+	top:0;
+}
+.panahkanan{
+	right:10px;
+}
+.panahkiri{
+	left:10px;
+}
+.comment-nav{
+	position: relative;
+	background:#2196F3;
+	height:60px;
+	color:#fff;
+	font-size: 15px;
+}
+.comment-text, .comment-menu{
+	float: left;
+}
+.comment-text{
+	width:25%;
+	padding:19px 20px 20px 20px;
+}
+.comment-menu{
+	width:75%;
+}
+.blogger-bar, .disqus-bar, .facebook-bar {
+    display: inline;
+    float: left;
+    cursor: pointer;
+    padding:19px 20px 15px 20px;
+    border-bottom:4px solid #2196F3;
+    transition: 0.3s;
+}
+.blogger-bar:hover, .disqus-bar:hover, .facebook-bar:hover {
+    border-bottom:4px solid #E91E63;	
+}
+.btncurrent {
+}
+
+
+@media screen and (max-width:1210px){
+	#post .wrapper,
+	#sidebar .wrapper{
+		padding:0;
+	}
+}
+@media screen and (max-width: 980px){
+	#post,
+	#sidebar{
+		float: none;
+		width:100%;
+		margin:1% 0;
+	}
+	.populer,
+	.subscribe,
+	.commentwidget{
+		width:49%;
+		float:left;
+	}
+	.populer{
+		margin:0 1% 0 0;
+	}
+	.subscribe{
+		margin:0 0 1% 1%;
+	}
+	.commentwidget{
+		margin:0 0 0 1%;
+	}
+}
+@media screen and (max-width:640px){
+
+  #content-wrapper{
+    height:4000px;
+  }
+  #content-wrapper .wrapper{
+  	padding:0;
+  }
+  #sidebar .wrapper{
+  	padding: 0 20px;
+  }
+  .populer, .subscribe, .commentwidget{
+    width:100%;
+    margin:2% 0;
+  }
+}
